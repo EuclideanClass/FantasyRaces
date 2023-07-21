@@ -19,9 +19,6 @@ namespace EFR
         {
             var harmony = new Harmony("Euclidean.FantasyRaces");
 
-            harmony.Patch(AccessTools.PropertyGetter(typeof(Tradeable_Pawn), nameof(Tradeable_Pawn.Label)),
-                postfix: new HarmonyMethod(patchType, nameof(TradeablePawnLabel_Postfix)));
-
             harmony.Patch(AccessTools.PropertyGetter(typeof(Hediff_InsectEgg), nameof(Hediff_InsectEgg.LabelBase)),
                 postfix: new HarmonyMethod(patchType, nameof(EggLabelBase_Postfix)));
 
@@ -171,22 +168,6 @@ namespace EFR
 
 
             return false;
-        }
-
-        /// <summary>
-        /// Adds the xenotype to the label of pawns in the trade menu.
-        /// E.g. "Euclidean (male, 25)" becomes "Euclidean (male impid, 25)".
-        /// Only applied when the pawn is not a baseliner.
-        /// </summary>
-        private static void TradeablePawnLabel_Postfix(Tradeable_Pawn __instance, ref string __result)
-        {
-            Pawn pawn = (Pawn)__instance.AnyThing;
-            if (pawn?.genes?.Xenotype?.label != null && pawn.genes.Xenotype.label != RimWorld.XenotypeDefOf.Baseliner.label)
-            {
-                string[] list = __result.Split(',');
-                list[1] += " " + pawn.genes.Xenotype.label;
-                __result = string.Join(",", list);
-            }
         }
 
         /// <summary>

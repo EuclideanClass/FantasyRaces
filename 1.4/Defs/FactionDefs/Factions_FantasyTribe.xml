@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- based on TribeBase (Core/Defs/FactionDefs/Factions_Misc.xml) -->
+    <FactionDef ParentName="TribeBase" Name="EFR_FantasyTribeBase" Abstract="True">
+        <canSiege>false</canSiege>
+
+        <melaninRange>0~0.5</melaninRange>
+        <allowedArrivalTemperatureRange>18~45</allowedArrivalTemperatureRange>
+
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+
+        <allowedCultures Inherit="False">
+            <li>EFR_Neyoan</li>
+        </allowedCultures>
+
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+        </requiredMemes>
+
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+        </disallowedPrecepts>
+
+        <xenotypeSet>
+            <xenotypeChances>
+                <EFR_Catgirl>0.2</EFR_Catgirl>
+                <EFR_Foxgirl>0.2</EFR_Foxgirl>
+                <EFR_Orc>0.2</EFR_Orc>
+                <EFR_Harpy>0.1</EFR_Harpy>
+                <EFR_Arachne>0.1</EFR_Arachne>
+                <EFR_Slimegirl>0.1</EFR_Slimegirl>
+                <EFR_Dragongirl>0.05</EFR_Dragongirl>
+                <EFR_Succubus>0.05</EFR_Succubus>
+            </xenotypeChances>
+        </xenotypeSet>
+    </FactionDef>
+
+    <!-- based on TribeCivil (Core/Defs/FactionDefs/Factions_Misc.xml) -->
+    <FactionDef ParentName="EFR_FantasyTribeBase">
+        <defName>EFR_FantasyTribeCivil</defName>
+        <label>fantasy tribe</label>
+        <description>A tribe of fantasy creatures.</description>
+        <colorSpectrum>
+            <li>(1.0, 0.866, 0.949)</li>
+            <li>(0.8, 0.217, 0.474)</li>
+        </colorSpectrum>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+        </disallowedMemes>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>36</configurationListOrderPriority>
+        <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    </FactionDef>
+
+    <!-- based on TribeSavageBase (Core/Defs/FactionDefs/Factions_Misc.xml) -->
+    <FactionDef ParentName="EFR_FantasyTribeBase">
+        <defName>EFR_FantasyTribeHostile</defName>
+        <label>savage fantasy tribe</label>
+        <description>A tribe of fantasy creatures, they seem to have an inclination towards violence and mistrust.</description>
+        <colorSpectrum>
+            <li>(216, 89, 5)</li>
+            <li>(216, 89, 175)</li>
+        </colorSpectrum>
+        <permanentEnemy>true</permanentEnemy>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+        </requiredMemes>
+        <factionIconPath>World/WorldObjects/Expanding/VillageSavage</factionIconPath>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>37</configurationListOrderPriority>
+        <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    </FactionDef>
+
+</Defs>

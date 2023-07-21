@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- based on NarrowVagina (RJW\Defs\ThingDefs\Items_BodyParts\Items_BodyParts_Animal.xml) -->
+    <ThingDef ParentName="rjw_BodyPartNaturalBaseGenFemale">
+        <defName>EFR_HarpyVagina</defName>
+        <label>harpy vagina</label>
+        <description>A tight, narrow vagina that is capable of gestating eggs.</description>
+        <descriptionHyperlinks>
+            <XenotypeDef>EFR_Harpy</XenotypeDef>
+        </descriptionHyperlinks>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<Mass>0.12</Mass>
+		</statBases>
+    </ThingDef>
+
+    <!-- based on OvipositorM (RJW\Defs\ThingDefs\Items_BodyParts\Items_BodyParts_Insect.xml) -->
+    <ThingDef ParentName="rjw_BodyPartNaturalBaseGenFemale">
+        <defName>EFR_ArachneOvipositor</defName>
+        <label>arachne ovipositor</label>
+        <description>An arachne ovipositor, implants eggs.</description>
+        <descriptionHyperlinks>
+            <XenotypeDef>EFR_Arachne</XenotypeDef>
+        </descriptionHyperlinks>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>2.00</Mass>
+		</statBases>
+    </ThingDef>
+
+</Defs>

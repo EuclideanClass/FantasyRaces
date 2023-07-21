@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef ParentName="Colonist">
+        <defName>EFR_Catgirl</defName>
+        <xenotypeSet>
+            <xenotypeChances>
+                <EFR_Catgirl>999</EFR_Catgirl>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Colonist">
+        <defName>EFR_Foxgirl</defName>
+        <xenotypeSet>
+            <xenotypeChances>
+                <EFR_Foxgirl>999</EFR_Foxgirl>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Colonist">
+        <defName>EFR_Succubus</defName>
+        <xenotypeSet>
+            <xenotypeChances>
+                <EFR_Succubus>999</EFR_Succubus>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Colonist">
+        <defName>EFR_Harpy</defName>
+        <xenotypeSet>
+            <xenotypeChances>
+                <EFR_Harpy>999</EFR_Harpy>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Colonist">
+        <defName>EFR_Arachne</defName>
+        <xenotypeSet>
+            <xenotypeChances>
+                <EFR_Arachne>999</EFR_Arachne>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Colonist">
+        <defName>EFR_Slimegirl</defName>
+        <xenotypeSet>
+            <xenotypeChances>
+                <EFR_Slimegirl>999</EFR_Slimegirl>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Colonist">
+        <defName>EFR_Dragongirl</defName>
+        <xenotypeSet>
+            <xenotypeChances>
+                <EFR_Dragongirl>999</EFR_Dragongirl>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Colonist">
+        <defName>EFR_Orc</defName>
+        <xenotypeSet>
+            <xenotypeChances>
+                <EFR_Orc>999</EFR_Orc>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+</Defs>

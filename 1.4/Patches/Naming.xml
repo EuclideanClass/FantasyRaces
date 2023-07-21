@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- these patches add the 'Name' attribute to various defs so that they can be inherit from -->
+
+    <!-- for the custom culture "Neyoan" (Defs\CultureDefs\Cultures_Neyoan.xml) -->
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/CultureDef[defName="Corunan"]</xpath>
+        <attribute>Name</attribute>
+        <value>Corunan</value>
+    </Operation>
+
+    <!-- for the fantasy race xenotype player pawn kinds (Defs\PawnKindDefs_Humanlikes\PawnKinds_FantasyRaces.xml) -->
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[defName="Colonist"]</xpath>
+        <attribute>Name</attribute>
+        <value>Colonist</value>
+    </Operation>
+
+    <!-- so the fantasy race xenotype player pawn kinds can inherit from it (see Defs\PawnKindDefs_Humanlikes\PawnKinds_FantasyRaces.xml) -->
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[defName="Colonist"]</xpath>
+        <attribute>Name</attribute>
+        <value>Colonist</value>
+    </Operation>
+
+</Patch>

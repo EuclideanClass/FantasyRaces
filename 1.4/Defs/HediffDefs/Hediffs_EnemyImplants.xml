@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <rjw.HediffDef_InsectEgg ParentName="RJW_ImplantEgg">
+        <defName>EFR_HarpyEgg</defName>
+        <label>harpy egg</label>
+        <description>The egg of a harpy. Can be fertilized by a human while gestation is less than 50% complete.</description>
+        <descriptionHyperlinks>
+            <XenotypeDef>EFR_Harpy</XenotypeDef>
+        </descriptionHyperlinks>
+        <defaultLabelColor>(240, 180, 116)</defaultLabelColor>
+        <stages Inherit="False">
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ComfyTemperatureMin>3</ComfyTemperatureMin>
+                    <SexSatisfaction>0.5</SexSatisfaction>
+                    <Vulnerability>0.5</Vulnerability>
+                    <SexFrequency>0.5</SexFrequency>
+                </statOffsets>
+            </li>
+        </stages>
+    </rjw.HediffDef_InsectEgg>
+
+    <rjw.HediffDef_InsectEgg ParentName="RJW_ImplantEgg">
+        <defName>EFR_ArachneEgg</defName>
+        <label>arachne egg</label>
+        <description>The egg of an arachne. Can be fertilized by a human while gestation is less than 50% complete.</description>
+        <descriptionHyperlinks>
+            <XenotypeDef>EFR_Arachne</XenotypeDef>
+        </descriptionHyperlinks>
+        <defaultLabelColor>(146, 82, 158)</defaultLabelColor>
+        <eggsize>0.2</eggsize>
+        <stages Inherit="False">
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.03</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    
+                    <SexSatisfaction>0.5</SexSatisfaction>
+                    <SexFrequency>0.5</SexFrequency>
+                </statOffsets>
+            </li>
+        </stages>
+    </rjw.HediffDef_InsectEgg>
+
+</Defs>

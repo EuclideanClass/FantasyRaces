@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- based on NarrowVagina (RJW\Defs\HediffDefs\Hediffs_PrivateParts\Hediffs_PrivateParts_Animal.xml) -->
+    <rjw.HediffDef_PartBase ParentName="NaturalPrivatePartVagina">
+        <defName>EFR_HarpyVagina</defName>
+        <label>harpy vagina</label>
+        <labelNoun>a harpy vagina</labelNoun>
+        <description>A tight, narrow vagina that is capable of gestating eggs.</description>
+        <descriptionHyperlinks>
+            <ThingDef>EFR_HarpyVagina</ThingDef>
+            <XenotypeDef>EFR_Harpy</XenotypeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>EFR_HarpyVagina</spawnThingOnRemoved>
+        <produceEggs>true</produceEggs>
+        <!-- produce 1 egg every 3-6 days (default is 1 every 0.2-2 days) -->
+        <minEggsProduced>1</minEggsProduced>
+        <maxEggsProduced>1</maxEggsProduced>
+        <minEggTick>180000</minEggTick>
+        <maxEggTick>360000</maxEggTick>
+
+        <modExtensions>
+            <li Class="rjw.PartProps">
+                <props>
+                    <li>Tight</li>
+                    <li>Deep</li>
+                    <li>Internal</li>
+                    <li>Rigid</li>
+                </props>
+            </li>
+        </modExtensions>
+    </rjw.HediffDef_PartBase>
+
+    <!-- based on OvipositorM (RJW\Defs\HediffDefs\Hediffs_PrivateParts\Hediffs_PrivateParts_Insect.xml) -->
+	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartPenis">
+		<defName>EFR_ArachneOvipositor</defName>
+		<label>arachne ovipositor</label>
+		<labelNoun>an arachne ovipositor</labelNoun>
+		<description>An arachne ovipositor, implants eggs.</description>
+		<descriptionHyperlinks>
+            <ThingDef>EFR_ArachneOvipositor</ThingDef>
+            <XenotypeDef>EFR_Arachne</XenotypeDef>
+        </descriptionHyperlinks>
+		<spawnThingOnRemoved>EFR_ArachneOvipositor</spawnThingOnRemoved>
+		<FluidType>InsectJelly</FluidType>
+        <produceEggs>true</produceEggs>
+        <!-- produce 1-3 eggs every 1-2 days (default is 1 every 0.2-2 days) -->
+        <minEggsProduced>1</minEggsProduced>
+        <maxEggsProduced>3</maxEggsProduced>
+        <minEggTick>60000</minEggTick>
+        <maxEggTick>120000</maxEggTick>
+
+		<modExtensions Inherit="false">
+			<li Class="rjw.PartSizeExtension">
+				<bodysizescale>true</bodysizescale>
+				<density>1.0</density>
+				<lengths>
+					<li>0</li>
+					<li>5.0</li>
+					<li>10.0</li>
+					<li>18.0</li>
+					<li>25.0</li>
+					<li>35.0</li>
+				</lengths>
+				<girths>
+					<li>0</li>
+					<li>5.0</li>
+					<li>10.0</li>
+					<li>13.0</li>
+					<li>17.0</li>
+					<li>21.0</li>
+				</girths>
+			</li>
+			
+			<li Class="rjw.Modules.Interactions.DefModExtensions.GenitalPartExtension">
+				<family>MaleOvipositor</family>
+				<tags>
+					<li>CanPenetrate</li>
+                    <li>CanEgg</li>
+				</tags>
+			</li>
+
+			<li Class="rjw.PartProps">
+				<props>
+					<li>Internal</li>
+					<li>Barbed</li>
+					<li>Ridged</li>
+					<li>Rigid</li>
+				</props>
+			</li>
+		</modExtensions>
+	</rjw.HediffDef_PartBase>
+
+</Defs>

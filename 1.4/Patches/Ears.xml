@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Cuter Biotech Cat/Dog Ear Replacer</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+                <xpath>Defs/GeneDef[defName="AG_AnimusEars" or defName="AG_DemonEars"]/graphicData/colorType</xpath>
+                <value>
+                    <colorType>Hair</colorType>
+                    <useSkinShader>false</useSkinShader>
+                </value>
+        </match>
+    </Operation>
+
+</Patch>

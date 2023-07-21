@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef ParentName="RJW_RemoveInsectEgg">
+        <defName>EFR_RemoveHarpyEgg</defName>
+        <removesHediff>EFR_HarpyEgg</removesHediff>
+        <!-- harpy eggs aren't implanted, so shouldn't show up anywhere besides genitals -->
+        <hideBodyPartNames>true</hideBodyPartNames>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RJW_RemoveInsectEgg">
+        <defName>EFR_RemoveArachneEgg</defName>
+        <removesHediff>EFR_ArachneEgg</removesHediff>
+    </RecipeDef>
+
+</Defs>

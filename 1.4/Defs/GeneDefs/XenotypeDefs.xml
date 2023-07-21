@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<XenotypeDef Abstract="True" Name="EFR_XenotypeBase">
+		<genes>
+			<li>Ageless</li>
+			<li>DiseaseFree</li>
+			<li>NakedSpeed</li>
+			<li>Body_Standard</li>
+			<li>AG_Female</li>
+            <li>Hair_Grayless</li>
+			<li>Beard_NoBeardOnly</li>
+		</genes>
+		<inheritable>True</inheritable>
+	</XenotypeDef>
+
+	<!-- catgirl -->
+    <XenotypeDef ParentName="EFR_XenotypeBase">
+        <defName>EFR_Catgirl</defName>
+        <label>catgirl</label>
+        <description>Genetically engineered catgirls, possessing feline attributes, beauty, and remarkable social aptitude. While great companions for some, catgirls are also lacking in intelligence and physical strength.\n\nOriginally engineered by glitterworld scientists, catgirls were designed for companionship in a similar way to highmates, with the main differences being the feline attributes they posses and the psychic affinity they lack. Due to their increased dexterity, catgirls inevitably escaped the confines of the laboratories and residences and spread out across the galaxy.</description>
+        <descriptionShort>Genetically engineered catgirls, possessing feline attributes, beauty, and remarkable social aptitude. While great companions for some, catgirls are also lacking in intelligence and physical strength.</descriptionShort>
+        <iconPath>UI/Icons/Genes/Gene_TailSmooth</iconPath>
+        <combatPowerFactor>0.8</combatPowerFactor>
+        <genes>
+            <li>Delicate</li>
+            <li>Beauty_Beautiful</li>
+            <li>Ears_Cat</li>
+            <li>DarkVision</li>
+            <li>Tail_Smooth</li>
+            <li>Libido_High</li>
+            <li>AptitudeRemarkable_Social</li>
+            <li>AptitudeTerrible_Intellectual</li>
+        </genes>
+    </XenotypeDef>
+
+	<!-- foxgirl -->
+    <XenotypeDef ParentName="EFR_XenotypeBase">
+        <defName>EFR_Foxgirl</defName>
+        <label>foxgirl</label>
+        <description>A combination of fox and human, foxgirls possess the remarkable survival instincts of foxes but the diurnal nature of humans. Due to their lacking physical abilities compared to an actual fox, foxgirls tend to adopt a herbivorous diet.\n\nIt is commonly accepted that foxgirls were the result of a genetic research ship crashing into a rimworld, after which various animalist fox-themed tribes formed and spread throughout the galaxy.</description>
+        <descriptionShort>A combination of fox and human, foxgirls possess the remarkable survival instincts of foxes but the diurnal nature of humans, Due to their lacking physical abilities compared to an actual fox, foxgirls tend to adopt a herbivorous diet.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/AG_Animusen</iconPath>
+        <combatPowerFactor>0.8</combatPowerFactor>
+        <genes>
+			<li>ArchiteMetabolism</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">AG_Invisibility</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>AG_SurvivalInstinct_High</li>
+			<li>AG_TableResistance</li>
+			<li>Aggression_DeadCalm</li>
+			<li>Delicate</li>
+			<li>AG_FoxTail</li>
+			<li>AG_AnimusEars</li>
+			<li>Beauty_Beautiful</li>
+			<li>Hair_ShortOnly</li>
+			<li>AG_FoxFace</li>
+			<li>DarkVision</li>
+			<li>AptitudeTerrible_Animals</li>
+        </genes>
+    </XenotypeDef>
+
+	<!-- succubus -->
+	<XenotypeDef ParentName="EFR_XenotypeBase">
+		<defName>EFR_Succubus</defName>
+		<label>succubus</label>
+		<description>A mythical race of humanoid creatures, succubi are demonic yet attractive humanoids of legend. Succubi are incredible adept socially and thrive in darkness, but suffer in the light.\n\nNo-one knows when or how succubi first appeared, nor how they keep appearing given their inability to reproduce. Some glitterworld academics hypothesize they are a derived strain of the impid geneline, but learning more has proven difficult due to their rarity.</description>
+		<descriptionShort>A mythical race of humanoid creatures, succubi are demonic yet attractive humanoids of legend. Succubi are incredible adept socially and thrive in darkness, but suffer in the light.</descriptionShort>
+		<iconPath>UI/Icons/Genes/AG_DemonTailIcon</iconPath>
+		<combatPowerFactor>0.8</combatPowerFactor>
+		<nameMaker>NamerPersonImpid</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+            <li>Deathless</li>
+			<li>Mood_Optimist</li>
+			<li>UVSensitivity_Intense</li>
+			<li>Delicate</li>
+			<li>Libido_High</li>
+			<li>Sterile</li>
+			<li>AG_DemonWings</li>
+			<li>AG_DemonTail</li>
+			<li>AG_Beauty_Angelic</li>
+			<li>Skin_Purple</li>
+			<li>DarkVision</li>
+			<li>AptitudeRemarkable_Social</li>
+		</genes>
+	</XenotypeDef>
+
+	<!-- harpy -->
+    <XenotypeDef ParentName="EFR_XenotypeBase">
+        <defName>EFR_Harpy</defName>
+        <label>harpy</label>
+        <description>A human-bird xenotype, harpies have the ability of flight complemented with incredible eyesight, but are extremely fragile. They differ significantly from any known xenotype in their method of reproduction, gestating (but not laying) eggs instead of having a traditional pregnancy.\n\nHarpies start producing eggs when they are 18, with a rate of one every 3-6 days. Eggs can be fertilized during the first half of their 12 day incubation period by any humanoid, otherwise they are internally dissolved and expelled from the vagina once the incubation period is over. If fertilized, a 12 day gestation period of accelerated growth begins. Once gestated, the egg hatches into newborn harpy. Analysis of harpy offspring find them to be genetically identical to their mother and biologically equivalent to a 16 year old human.\n\nEven esteemed genetic scholars are clueless when it comes to the origin of the harpy, as their atypical method of reproduction casts heavy doubt that they were a genetically engineered xenotype.</description>
+        <descriptionShort>A human-bird xenotype, harpies have the ability of flight complemented with incredible eyesight, but are extremely fragile. They differ significantly from any known xenotype in their method of reproduction, gestating (but not laying) eggs instead of having a traditional pregnancy.</descriptionShort>
+        <iconPath>UI/Icons/Genes/AG_FeatheredWingsIcon</iconPath>
+        <combatPowerFactor>0.75</combatPowerFactor>
+        <genes>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>AG_TableResistance</li>
+			<li>Mood_Sanguine</li>
+			<li>FireTerror</li>
+			<li>Delicate</li>
+			<li>AG_BrittleBones</li>
+			<li>Libido_High</li>
+			<li>AG_FeatheredWings</li>
+			<li>AG_DemonEars</li>
+			<li>Beauty_Beautiful</li>
+			<li>AG_Digitigrade</li>
+			<li>AG_ChameleonVision</li>
+			<li>DarkVision</li>
+        </genes>
+    </XenotypeDef>
+
+	<!-- arachne -->
+    <XenotypeDef ParentName="EFR_XenotypeBase">
+        <defName>EFR_Arachne</defName>
+        <label>arachne</label>
+        <description>A spider-related xenotype far removed from a baseline human, arachne differ greatly in reproductive strategy, abilities, and general lifestyle. Arachne are great predators in dark environments, aided by their nightvision and two pairs of feralisk eyes they can quickly dispatch unsuspecting prey.\n\nArachne ovipositors typically begin egg production at 18 years, with a rate of 1-3 every 1-2 days. Eggs can be fertilized during the first half of their 3 day incubation period by any humanoid or via implantation, and are otherwise internally dissolved and expelled from the ovipositor once the incubation period is over. If fertilized, a 3 day gestation period of accelerated growth begins. Once gestated, the egg hatches into a newbrown arachne. Analysis of arachne offspring find them to be genetically identical to their mother and biologically equivalent to an 18 year old human.\n\nIt is speculated that the origins of the arachne are related to those of the harpy, as they both possess the egg-laying reproductive strategy that has left many scholars at a loss of how they were engineered.</description>
+        <descriptionShort>A spider-related xenotype far removed from a baseline human, arachne differ greatly in reproductive strategy, abilities, and general lifestyle. Arachne are great predators in dark environments, aided by their nightvision and two pairs of feralisk eyes they can quickly dispatch unsuspecting prey.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/AG_Hiveling</iconPath>
+        <combatPowerFactor>1.1</combatPowerFactor>
+        <genes>
+			<li>AG_Spinnerets</li>
+			<li>AG_InsectBlood</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>AG_UVSensitivity_Minor</li>
+			<li>Pain_Reduced</li>
+			<li>Eyes_Red</li>
+			<li>Skin_InkBlack</li>
+			<li>AG_FeraliskEyes</li>
+			<li>DarkVision</li>
+			<li>AptitudeStrong_Melee</li>
+        </genes>
+    </XenotypeDef>
+
+	<!-- slimegirl -->
+    <XenotypeDef ParentName="EFR_XenotypeBase">
+        <defName>EFR_Slimegirl</defName>
+        <label>slimegirl</label>
+        <description>A gelatinous partially-permeable humanoid creature, slimegirls are more akin to bacteria than humans. Immune to permanent damage and nigh unkillable, their only weakness seems to be their lack of intelligence.\n\nSlimegirls consist of 2 layers of slime, a thick blue outer layer, and a green inner layer that is less viscout. Their unique biology renders them completely immue to typical human diseases, the effects of aging, scarring, and even death (excluding the destruction of their brain). Slimegirls are similar to bacteria in reproduction, using asexual fission to produce a genetically-identical offspring roughly every 25 days.\n\nUnlike other xenotypes, the origins of the slimegirl xenotype are well documented, being genetically engineered by a well-known biotech company aiming to create self-replicating soldiers.</description>
+        <descriptionShort>A gelatinous partially-permeable humanoid creature, slimegirls are more akin to bacteria than humans. Immune to permanent damage and nigh unkillable, their only weakness seems to be their lack of intelligence.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/AG_Fleetkind</iconPath>
+        <combatPowerFactor>1.0</combatPowerFactor>
+        <genes>
+			<li>AG_AsexualFission</li>
+			<li>Deathless</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<li>AG_Regeneration</li>
+			<li>AG_SlimeBlood</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>Libido_High</li>
+			<li>Sterile</li>
+			<li>AG_SlimeBody</li>
+			<li>Skin_Blue</li>
+			<li>Learning_Slow</li>
+			<li>AptitudeTerrible_Intellectual</li>
+        </genes>
+    </XenotypeDef>
+
+	<!-- dragongirl -->
+    <XenotypeDef ParentName="EFR_XenotypeBase">
+        <defName>EFR_Dragongirl</defName>
+        <label>dragongirl</label>
+        <description>A cross between the legendary dragon race and humans, dragongirls boast extreme offensive and defensive power. Besides low temperatures, dragongirls are only held back by their increased need to sleep.\n\nSome say dragongirls have been around since the dawn of humans and dragons, remaining hidden and rare due to their slower gestation periods, longer lifespans, and sedentary nature. However it is most likely they were engineered in a biotech lab with dragons in mind, possibly for military or survivalist purposes. Dragongirls commonly come in 3 variants of colour: red, orange, and white.</description>
+        <descriptionShort>A cross between the legendary dragon race and humans, dragongirls boast extreme offensive and defensive power. Besides low temperatures, dragongirls are only held back by their increased need to sleep.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Impid</iconPath>
+        <combatPowerFactor>1.8</combatPowerFactor>
+        <genes>
+			<li>ArchiteMetabolism</li>
+			<li>Deathless</li>
+			<li>AG_HeatImmunity</li>
+			<li>AG_GreaterFireSpew</li>
+			<li>AG_ArmourMajor</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>AG_ColdSlowness</li>
+			<li>VerySleepy</li>
+			<li>Robust</li>
+			<li>AG_SlowGestation</li>
+			<li>AG_BatWings</li>
+			<li>Headbone_MiniHorns</li>
+			<li>Skin_Orange</li>
+			<li>Skin_SheerWhite</li>
+			<li>Skin_DeepRed</li>
+			<li>Unstoppable</li>
+			<li>AptitudePoor_Animals</li>
+        </genes>
+    </XenotypeDef>
+
+	<!-- orc -->
+    <XenotypeDef ParentName="EFR_XenotypeBase">
+        <defName>EFR_Orc</defName>
+        <label>orc</label>
+        <description>Similar to hussars, orcs are mythical warriors highly adapted in close-quarters combat but lacking in virtually anything else. Orcs boast immunity to lung rot, psychic effects, and poison, and possess significant regenerative abilities.\n\nA result of yet another attempt to create impervious soldiers, the orc xenotype sacrifices most skills to focus solely on melee combat.</description>
+        <descriptionShort>Similar to hussars, orcs are mythical warriors highly adapted in close-quarters combat but lacking in virtually anything else. Orcs boast immunity to lung rot, psychic effects, and poison, and possess significant regenerative abilities.</descriptionShort>
+        <iconPath>UI/Icons/Genes/Skills/Melee/Strong</iconPath>
+        <combatPowerFactor>2</combatPowerFactor>
+        <genes>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>AG_CorpseFeeding</li>
+			<li>AG_SurvivalInstinct_Low</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>Superclotting</li>
+			<li>AG_LungRotImmunity</li>
+			<li>AG_Filthy</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Robust</li>
+			<li>Pain_Reduced</li>
+			<li>Libido_High</li>
+			<li>AG_FastGestation</li>
+			<li>Ears_Pointed</li>
+			<li>AG_Skin_PlantGreen</li>
+			<li>Learning_Slow</li>
+			<li>Nearsighted</li>
+			<li>AptitudeRemarkable_Melee</li>
+			<li>AptitudeTerrible_Plants</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Intellectual</li>
+        </genes>
+    </XenotypeDef>
+
+</Defs>

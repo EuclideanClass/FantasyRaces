@@ -3,7 +3,7 @@
 	<name>Fantasy Races</name>
 	<author>Euclidean</author>
 	<packageId>Euclidean.FantasyRaces</packageId>
-	<modVersion>1.0.1</modVersion>
+	<modVersion>1.0.2</modVersion>
 	<url>https://github.com/EuclideanClass/FantasyRaces</url>
 	<supportedVersions>
 		<li>1.4</li>

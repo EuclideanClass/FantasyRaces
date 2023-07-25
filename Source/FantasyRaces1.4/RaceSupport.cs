@@ -58,7 +58,7 @@ namespace EFR
             GenitalsByXenotype_Female.SetOrAdd(XenotypeDefOf.EFR_Slimegirl, new List<HediffDef> { Genital_Helper.slime_vagina });
             GenitalsByXenotype_Male.SetOrAdd(XenotypeDefOf.EFR_Slimegirl, new List<HediffDef> { Genital_Helper.slime_penis });
             AnusesByXenotype.SetOrAdd(XenotypeDefOf.EFR_Slimegirl, Genital_Helper.slime_anus);
-            RaceTagsByXenotype.SetOrAdd(XenotypeDefOf.EFR_Arachne, new HashSet<RaceTag> { RaceTag.Slime });
+            RaceTagsByXenotype.SetOrAdd(XenotypeDefOf.EFR_Slimegirl, new HashSet<RaceTag> { RaceTag.Slime });
 
             // dragongirl
             GenitalsByXenotype_Female.SetOrAdd(XenotypeDefOf.EFR_Dragongirl, new List<HediffDef> { Genital_Helper.dragon_vagina });

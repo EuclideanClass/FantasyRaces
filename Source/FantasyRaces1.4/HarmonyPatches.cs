@@ -55,10 +55,10 @@ namespace EFR
             harmony.Patch(AccessTools.Method(typeof(PawnGenerator), "TryGenerateNewPawnInternal"),
                 prefix: new HarmonyMethod(patchType, nameof(TryGenerateNewPawnInternal_Prefix)));
 
-            harmony.Patch(AccessTools.Method(typeof(LegacySexPartAdder), nameof(LegacySexPartAdder.AddGenitals)),
+            harmony.Patch(AccessTools.Method(typeof(SexPartAdder), nameof(SexPartAdder.add_genitals)),
                 prefix: new HarmonyMethod(patchType, nameof(AddGenitals_Prefix)));
 
-            harmony.Patch(AccessTools.Method(typeof(LegacySexPartAdder), nameof(LegacySexPartAdder.AddAnus)),
+            harmony.Patch(AccessTools.Method(typeof(SexPartAdder), nameof(SexPartAdder.add_anus)),
                 prefix: new HarmonyMethod(patchType, nameof(AddAnus_Prefix)));
 
             harmony.Patch(AccessTools.Method(typeof(Hediff_PartBaseNatural), "Tick"),
@@ -117,7 +117,7 @@ namespace EFR
         /// <summary>
         /// Fantasy race xenotype genital setter.
         /// </summary>
-        private static bool AddGenitals_Prefix(Pawn pawn, Gender gender, BodyPartRecord bpr)
+        private static bool AddGenitals_Prefix(Pawn pawn, Gender gender)
         {
             if (!FantasyRaces.IsFantasyRace_Pawn(pawn, out XenotypeDef xenotypeDef))
             {
@@ -128,6 +128,9 @@ namespace EFR
             {
                 return true;
             }
+
+            BodyPartRecord bpr = Genital_Helper.get_genitalsBPR(pawn);
+            if (bpr == null || pawn.health.hediffSet.PartIsMissing(bpr)) return true;
 
             foreach (HediffDef hediffDef in customGenitals)
             {
@@ -146,8 +149,9 @@ namespace EFR
         /// <summary>
         /// Fantasy race xenotype anus setter.
         /// </summary>
-        private static bool AddAnus_Prefix(Pawn pawn, BodyPartRecord bpr)
+        private static bool AddAnus_Prefix(Pawn pawn)
         {
+
             if (!FantasyRaces.IsFantasyRace_Pawn(pawn, out XenotypeDef xenotypeDef))
             {
                 return true;
@@ -157,6 +161,9 @@ namespace EFR
             {
                 return true;
             }
+
+            BodyPartRecord bpr = Genital_Helper.get_anusBPR(pawn);
+            if (bpr == null || pawn.health.hediffSet.PartIsMissing(bpr)) return true;
 
             if (FantasyRaceSettings.DevMode)
             {
